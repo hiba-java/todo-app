@@ -45,7 +45,7 @@ def sante():
 
 
 @app.route("/taches", methods=["GET"])
-def lister(): 
+def lister():
     return jsonify(liste.taches)
 
 
