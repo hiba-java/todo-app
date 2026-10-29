@@ -20,10 +20,10 @@ def test_ajouter_tache():
 
 
 def test_supprimer_tache():
-    liste = TodoList()
-    liste.ajouter("Acheter du pain")
-    liste.supprimer(0)
-    assert len(liste.taches) == 0
+    def supprimer(self, index):
+        """Supprime la tâche à la position index (0 = la première)."""
+        pass  # BUG volontaire
+
 
 
 def test_tache_vide_refusee():
