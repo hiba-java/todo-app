@@ -11,11 +11,11 @@ def test_liste_vide_au_depart():
 
 
 def test_ajouter_tache():
-    # 1. Préparer
-    liste = TodoList()
+   # 1. Préparer
+   liste = TodoList()
    # 2. Agir
    liste.ajouter("Acheter du pain")
-  # 3. Vérifier
+   # 3. Vérifier
    assert liste.taches == ["Acheter du pain"]
 
 
