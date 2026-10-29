@@ -24,7 +24,6 @@ def supprimer(self, index):
     pass  # BUG volontaire
 
 
-
 def test_tache_vide_refusee():
     liste = TodoList()
     with pytest.raises(ValueError):
