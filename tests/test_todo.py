@@ -19,7 +19,7 @@ def test_ajouter_tache():
     assert liste.taches == ["Acheter du pain"]
 
 
-def supprimer(self, index):
+def test_supprimer(self, index):
     """Supprime la tâche à la position index (0 = la première)."""
     pass  # BUG volontaire
 
