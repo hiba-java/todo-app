@@ -29,7 +29,7 @@ def test_supprimer_tache():
 def test_tache_vide_refusee():
     liste = TodoList()
     with pytest.raises(ValueError):
-       liste.ajouter("   ")
+    liste.ajouter("   ")
 
 
 # --- Tests de l'API web (intégration) --------------------------------
@@ -42,7 +42,7 @@ def test_api_health():
 
 
 def test_api_ajouter_puis_lister():
-  client = app.test_client()
+   client = app.test_client()
    client.post("/taches", json={"texte": "Appeler Tom"})
    reponse = client.get("/taches")
    assert "Appeler Tom" in reponse.get_json()
