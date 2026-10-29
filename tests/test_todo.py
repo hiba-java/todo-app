@@ -46,3 +46,4 @@ def test_api_ajouter_puis_lister():
     client.post("/taches", json={"texte": "Appeler Tom"})
     reponse = client.get("/taches")
     assert "Appeler Tom" in reponse.get_json()
+    
