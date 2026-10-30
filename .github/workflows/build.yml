@@ -163,7 +163,3 @@ jobs:
               -p 80:5000 ${{ env.IMAGE }}
             sleep 5
             curl --fail --silent http://localhost/health
-
-
-
-       
